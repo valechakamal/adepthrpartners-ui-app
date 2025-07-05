@@ -11,12 +11,22 @@ import Footer from './components/footer.jsx';
 function App() {
   return (
     <div className="App">
-      <Header />      
-        <Home />
-        <AboutUs />
-        <Solutions/>
-        <Clients />
-        <Contactus />
+      <Header />
+        <div id="home">
+          <Home />
+        </div>
+        <div id="aboutus">
+          <AboutUs />
+        </div>
+        <div id="solutions">
+          <Solutions />
+        </div>
+        <div id="clients">
+          <Clients />
+        </div>
+        <div id="contact">
+          <Contactus />
+        </div>
       <Footer />
     </div>
   );

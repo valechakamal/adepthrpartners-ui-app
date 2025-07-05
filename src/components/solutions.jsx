@@ -84,12 +84,12 @@ const Solutions = () => (
         </section>
 
         {/* HR Strategic Solution Section */}
-        <section>
+        <section id="services">
             <h2 style={{ marginBottom: 24 }}>HR Strategic Solution</h2>
             <p style={{ marginBottom: 32 }}>
                 We offer tailored HR solutions to address your unique business challenges. Explore our key offerings below:
             </p>
-            <div
+            <div 
                 style={{
                     display: "grid",
                     gridTemplateColumns: "repeat(3, 1fr)",

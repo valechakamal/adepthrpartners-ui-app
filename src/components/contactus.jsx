@@ -29,8 +29,12 @@ const ContactUs = () => {
             fontFamily: "Segoe UI, Arial, sans-serif"
         }}>
             <h2 style={{ color: "#1a237e", marginBottom: 24, textAlign: "center" }}>
-                Contact Us
+                Contact Us <br/>
+            
             </h2>
+            <span style={{ display: "block", marginBottom: 24, textAlign: "center", color: "#555" }}>
+                We’d love to hear from you! Please fill out the form below or send an email to <b>contact@adepthrpartners.com</b> and we’ll get back to you as soon as possible.
+            </span>
             {submitted ? (
                 <div style={{ color: "#388e3c", textAlign: "center", fontWeight: 500 }}>
                     Thank you for reaching out! We'll get back to you soon.
