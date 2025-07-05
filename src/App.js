@@ -4,7 +4,7 @@ import Header from './components/header.jsx';
 import Home from './components/home.jsx';
 import AboutUs from './components/aboutus.jsx';
 import Solutions from './components/solutions.jsx';
-import Clients from './components/clients.jsx';
+//import Clients from './components/clients.jsx';
 import Contactus from './components/contactus.jsx';
 import Footer from './components/footer.jsx';
 
