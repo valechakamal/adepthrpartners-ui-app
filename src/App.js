@@ -21,9 +21,9 @@ function App() {
         <div id="solutions">
           <Solutions />
         </div>
-        <div id="clients">
+        {/* <div id="clients">
           <Clients />
-        </div>
+        </div> */}
         <div id="contact">
           <Contactus />
         </div>
