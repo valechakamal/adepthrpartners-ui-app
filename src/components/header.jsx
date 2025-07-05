@@ -1,12 +1,6 @@
 import React from "react";
-// If using Create React App or similar setup:
-import logo from "../logo-chatgpt.png";
-
-// If you get an error, try this alternative:
-// const logo = require("../logo-chatgpt.png");
-
-// Or, if the image is in the public folder, use:
-// const logo = process.env.PUBLIC_URL + "/logo-chatgpt.png";
+import logo from "../images/logo-chatgptCopy.png";
+import Navigation from "./navigation";
 
 const headerStyle = {
     background: "#e3f0fc",
@@ -37,7 +31,7 @@ const navRowStyle = {
     alignItems: "center",
     justifyContent: "flex-end",
     padding: "0 40px",
-    marginTop: "10px"
+    marginTop: "0.5px"
 };
 
 const navMenuStyle = {
@@ -69,7 +63,7 @@ const Header = () => (
     <header style={headerStyle}>
         <div style={topRowStyle}>
             <img src={logo} alt="Logo" style={logoStyle} />
-            <span style={companyNameStyle}>Adept HR partners</span>
+            <span style={companyNameStyle}>Adept HR Partners</span>
         </div>
         <div style={navRowStyle}>
             <nav style={navMenuStyle}>

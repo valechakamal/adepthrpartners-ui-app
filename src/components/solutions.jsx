@@ -1,4 +1,7 @@
 import React from "react";
+import HrrecruitmentImg from "../images/hrrecruitment.png";
+import HrpayrollImg from "../images/hrpayroll.png";
+import HroperationsImg from "../images/hroperations.png";
 
 const tileData = [
     {
@@ -33,7 +36,7 @@ const Solutions = () => (
         <section style={{ display: "flex", alignItems: "center", marginBottom: 48 }}>
             <div style={{ flex: 1, paddingRight: 24 }}>
                 <img
-                    src="https://images.unsplash.com/photo-1515168833906-d2a3b82b1a48?auto=format&fit=crop&w=400&q=80"
+                    src={HrrecruitmentImg}
                     alt="Recruitment"
                     style={{ width: "100%", borderRadius: 8 }}
                 />
@@ -56,7 +59,7 @@ const Solutions = () => (
             </div>
             <div style={{ flex: 1, paddingLeft: 24 }}>
                 <img
-                    src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                    src={HrpayrollImg}
                     alt="Payroll"
                     style={{ width: "100%", borderRadius: 8 }}
                 />
@@ -67,7 +70,7 @@ const Solutions = () => (
         <section style={{ display: "flex", alignItems: "center", marginBottom: 48 }}>
             <div style={{ flex: 1, paddingRight: 24 }}>
                 <img
-                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=400&q=80"
+                    src={HroperationsImg}
                     alt="HR Operations"
                     style={{ width: "100%", borderRadius: 8 }}
                 />

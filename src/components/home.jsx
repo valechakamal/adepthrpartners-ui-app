@@ -1,18 +1,26 @@
 import React from "react";
+import hrPartnershipImg from "../images/hrpartnership.png";
 
 const Home = () => {
     return (
         <section style={{ display: "flex", minHeight: "100vh", alignItems: "center", padding: "2rem" }}>
             {/* Left Section */}
-            <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: "1.5rem" }}>
+            <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: "1.5rem",paddingRight: 24 }}>
                 {/* Row 1: Header */}
                 <div>
-                    <h1>Welcome to Adept HR Partners</h1>
+                    <h1>Welcome to Adept HR Partners.
+
+                    </h1>
+                    <h4>
+                        Your Strategic Partner for HR Excellence.</h4>
                 </div>
                 {/* Row 2: Description */}
                 <div>
                     <p>
-                        We help you find the best HR solutions for your business. Join us to streamline your HR processes and grow your team efficiently.
+                        We deliver comprehensive HR solutions tailored to your business needs. Recruitment, operations, and payroll expertise for optimal performance and growth. Join us to streamline your HR processes and grow your team efficiently.
+                    </p>
+                    <p>
+                        Contact us today to discover how our expert HR solutions can drive your business forward effectively. 
                     </p>
                 </div>
                 {/* Row 3: Email Input and Button */}
@@ -28,11 +36,12 @@ const Home = () => {
                 </div>
             </div>
             {/* Right Section */}
-            <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "1rem" }}>
-                {/* Placeholder Images */}
-                <div style={{ width: "200px", height: "120px", background: "#eee", display: "flex", alignItems: "center", justifyContent: "center" }}>Image 1</div>
-                <div style={{ width: "200px", height: "120px", background: "#ddd", display: "flex", alignItems: "center", justifyContent: "center" }}>Image 2</div>
-                <div style={{ width: "200px", height: "120px", background: "#ccc", display: "flex", alignItems: "center", justifyContent: "center" }}>Image 3</div>
+            <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "1rem", overflow: "hidden" }}>
+                <img
+                    src={hrPartnershipImg}
+                    alt="HR Solutions"
+                    style={{ maxWidth: "100%", height: "auto", borderRadius: 8, display: "block", objectFit: "contain" }}
+                />
             </div>
         </section>
     );
