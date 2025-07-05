@@ -6,22 +6,17 @@ const Home = () => {
         <section style={{ display: "flex", minHeight: "100vh", alignItems: "center", padding: "2rem" }}>
             {/* Left Section */}
             <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "center", gap: "1.5rem",paddingRight: 24 }}>
-                {/* Row 1: Header */}
+    
                 <div>
-                    <h1>Welcome to Adept HR Partners.
-
-                    </h1>
-                    <h4>
-                        Your Strategic Partner for HR Excellence.</h4>
-                </div>
-                {/* Row 2: Description */}
-                <div>
-                    <p>
+                    <h1>Welcome to Adept HR Partners.</h1>
+                    <h4>Your Strategic Partner for HR Excellence.</h4>
+                    <p style={{ fontSize: "0.95rem" }}>
                         We deliver comprehensive HR solutions tailored to your business needs. Recruitment, operations, and payroll expertise for optimal performance and growth. Join us to streamline your HR processes and grow your team efficiently.
                     </p>
-                    <p>
-                        Contact us today to discover how our expert HR solutions can drive your business forward effectively. 
-                    </p>
+                    <br />
+                    <span style={{ fontSize: "0.85rem", fontStyle: "italic" }}>
+                        Contact us today to discover how our expert HR solutions can drive your business forward effectively.
+                    </span>
                 </div>
                 {/* Row 3: Email Input and Button */}
                 <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>

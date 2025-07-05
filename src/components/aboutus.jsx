@@ -3,21 +3,21 @@ import React from 'react';
 // Example statistics data
 const stats = [
     { label: 'Years of Experience', value: '10+' },
-    { label: 'Clients', value: '150+' },
-    { label: 'Projects Delivered', value: '200+' },
-    { label: 'Team Members', value: '50+' },
+    { label: 'Clients', value: '5+' },
+    { label: 'Projects Delivered', value: '30+' },
+    { label: 'Team Members', value: '5+' },
 ];
 
 const sectionStyle = {
     backgroundColor: '#e6f2fb', // Match header.jsx light blue
-    padding: '48px 0',
+    padding: '12px 0',
 };
 
 const containerStyle = {
     display: 'flex',
     maxWidth: '1100px',
     margin: '0 auto',
-    gap: '48px',
+    gap: '12px',
     alignItems: 'center',
     flexWrap: 'wrap',
 };
@@ -29,16 +29,16 @@ const leftStyle = {
 
 const rightStyle = {
     flex: 1,
-    minWidth: '250px',
+    minWidth: '50px',
     display: 'flex',
     flexDirection: 'column',
-    gap: '24px',
+    gap: '12px',
 };
 
 const statBoxStyle = {
     background: '#fff',
     borderRadius: '8px',
-    padding: '20px',
+    padding: '5px',
     boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
     textAlign: 'center',
 };

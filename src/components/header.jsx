@@ -71,8 +71,8 @@ const Header = () => (
                 <a href="/aboutus" style={navLinkStyle}>About us</a>
                 <a href="/solutions" style={navLinkStyle}>Solution</a>
                 <a href="#" style={navLinkStyle}>Services</a>
+                <a href="#" style={navLinkStyle}>Contact</a>
             </nav>
-            <button style={buttonStyle}>Get Started</button>
         </div>
     </header>
 );

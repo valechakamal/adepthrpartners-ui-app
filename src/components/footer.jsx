@@ -12,7 +12,7 @@ const Footer = () => (
         left: 0,
         bottom: 0
     }}>
-        &copy; {new Date().getFullYear()} Adepthr Partners. All rights reserved.
+        &copy; 2024 Adept HR Partners. All rights reserved.
     </footer>
 );
 
