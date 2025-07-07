@@ -2,8 +2,8 @@ import React from 'react';
 
 // Example statistics data
 const stats = [
-    { label: 'Years of Experience', value: '10+' },
-    { label: 'Clients', value: '5+' },
+    { label: 'Years of Experience', value: '3+' },
+    { label: 'Clients', value: '10s+' },
     { label: 'Projects Delivered', value: '30+' },
     { label: 'Team Members', value: '5+' },
 ];
