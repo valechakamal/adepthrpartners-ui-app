@@ -3,7 +3,7 @@ import React from 'react';
 // Example statistics data
 const stats = [
     { label: 'Years of Experience', value: '3+' },
-    { label: 'Clients', value: '10s+' },
+    { label: 'Clients', value: '10+' },
     { label: 'Projects Delivered', value: '30+' },
     { label: 'Team Members', value: '5+' },
 ];
