@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xwlvdvoj";
+
 const ContactUs = () => {
     const [form, setForm] = useState({
         name: "",
@@ -7,15 +9,43 @@ const ContactUs = () => {
         message: "",
     });
     const [submitted, setSubmitted] = useState(false);
+    const [isSending, setIsSending] = useState(false);
 
     const handleChange = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Here you can handle form submission (e.g., send to API)
-        setSubmitted(true);
+        setIsSending(true);
+
+        try {
+            const response = await fetch(FORMSPREE_ENDPOINT, {
+                method: "POST",
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    name: form.name,
+                    email: form.email,
+                    message: form.message,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error("Form submission failed");
+            }
+
+            setSubmitted(true);
+            setForm({ name: "", email: "", message: "" });
+            window.location.href = "https://adepthrpartners.com";
+        } catch (error) {
+            console.error("Formspree submission error:", error);
+            alert("Something went wrong while sending your message. Please try again.");
+        } finally {
+            setIsSending(false);
+        }
     };
 
     return (
@@ -30,7 +60,6 @@ const ContactUs = () => {
         }}>
             <h2 style={{ color: "#1a237e", marginBottom: 24, textAlign: "center" }}>
                 Contact Us <br/>
-            
             </h2>
             <span style={{ display: "block", marginBottom: 24, textAlign: "center", color: "#555" }}>
                 We’d love to hear from you! Please fill out the form below or send an email to <b>contact@adepthrpartners.com</b> and we’ll get back to you as soon as possible.
@@ -41,6 +70,7 @@ const ContactUs = () => {
                 </div>
             ) : (
                 <form onSubmit={handleSubmit}>
+                    <input type="hidden" name="_next" value="https://adepthrpartners.com" />
                     <div style={{ marginBottom: 18 }}>
                         <label style={{ display: "block", marginBottom: 6, color: "#333" }}>
                             Name
@@ -107,20 +137,23 @@ const ContactUs = () => {
                     </div>
                     <button
                         type="submit"
+                        disabled={isSending}
                         style={{
                             width: "100%",
-                            background: "linear-gradient(90deg, #1a237e 0%, #3949ab 100%)",
+                            background: isSending
+                                ? "linear-gradient(90deg, #7c85c5 0%, #9aa3d3 100%)"
+                                : "linear-gradient(90deg, #1a237e 0%, #3949ab 100%)",
                             color: "#fff",
                             padding: "12px 0",
                             border: "none",
                             borderRadius: 6,
                             fontSize: 18,
                             fontWeight: 600,
-                            cursor: "pointer",
+                            cursor: isSending ? "not-allowed" : "pointer",
                             boxShadow: "0 2px 8px rgba(26,35,126,0.08)"
                         }}
                     >
-                        Send Message
+                        {isSending ? "Sending..." : "Send Message"}
                     </button>
                 </form>
             )}
